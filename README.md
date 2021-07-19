@@ -2,7 +2,7 @@
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/juslenelobeu/onepage-codelandia?style=flat-square">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/juslenelobeu/onepage-codelandia?style=flat-square">
 
-  <img align="center" src="https://raw.githubusercontent.com/juslenelobeu/onepage-codelandia/master/assets/image/screenshot.jpg" width="100%">
+  <img align="center" src="https://raw.githubusercontent.com/juslenelobeu/onepage-codelandia/master/assets/images/screenshot.jpg" width="100%">
 
   <h1>Desafio 'One Page'</h1>
   <p>Proposto pelo <a href="https://github.com/iuricode">Iure Silva</a> criador da comunidade Codelândia</p>
