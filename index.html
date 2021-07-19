@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Page | Desafio 3 - Codelândia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+  <header class="headline">
+    <div class="container">
+      <section class="headline-content">
+        <article>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur
+            ullamcorper non ac massa.</p>
+          <button class="button-primary" type="button">Botão</button>
+        </article>
+        <aside>
+          <img src="./assets/images/image.svg" alt="">
+        </aside>
+      </section>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="cards">
+        <div class="card">
+          <div class="card-thumb color-red"></div>
+          <div class="card-text">
+            <h3>Título do card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-thumb color-blue"></div>
+          <div class="card-text">
+            <h3>Título do card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-thumb color-pink"></div>
+          <div class="card-text">
+            <h3>Título do card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-thumb color-green"></div>
+          <div class="card-text">
+            <h3>Título do card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-thumb color-yellow"></div>
+          <div class="card-text">
+            <h3>Título do card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-thumb color-purple"></div>
+          <div class="card-text">
+            <h3>Título do card</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="contact">
+      <h2>Entre em contato</h2>
+      <form action="">
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="E-mail">
+        <input type="tel" placeholder="Telefone">
+        <textarea name="" id="" rows="5" placeholder="Mensagem..."></textarea>
+        <button class="button-primary" type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <span>by <a href="https://www.juslenelobeudesigner.com.br" target="_blank">Juslene Lobeu</a></span>
+    <span class="links-redes">
+      <a class="link-item" href="https://www.juslenelobeudesigner.com.br" target="_blank">
+        <img src="./assets/images/social/globe.svg" alt="">
+      </a>
+      <a class="link-item" href="https://www.linkedin.com/in/juslenelobeu/" target="_blank">
+        <img src="./assets/images/social/linkedin-in.svg" alt="">
+      </a>
+      <a class="link-item" href="https://github.com/juslenelobeu" target="_blank">
+        <img src="./assets/images/social/github.svg" alt="">
+      </a>
+      <a class="link-item" href="https://dribbble.com/juslenelobeu" target="_blank">
+        <img src="./assets/images/social/dribbble.svg" alt="">
+      </a>
+      <a class="link-item" href="https://www.instagram.com/juslenelobeu.dev/" target="_blank">
+        <img src="./assets/images/social/instagram.svg" alt="">
+      </a>
+    </span>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '50px',
+      duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.card', {
+      delay: 200,
+      interval: 100
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/*Variáveis*/
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+
+  --white: #ffffff;
+  --white300: #f9f9f9;
+
+  --title: #2b2b2b;
+  --text: #555555;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  background: var(--white300);
+  color: var(--text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Merriweather', monospace;
+  color: var(--title);
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input,
+textarea {
+  border: 0;
+  outline: none;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+
+.button-primary {
+  background: var(--buttonColor);
+  color: var(--white);
+  font-size: 20px;
+  padding: 13px 50px;
+  border-radius: 5px;
+  border: 2px solid var(--buttonColor);
+  cursor: pointer;
+  transition: background .3s;
+}
+  .button-primary:hover {
+  background: transparent !important;
+  color: var(--buttonColor);
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  max-width: 1240px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.headline {
+  background: var(--bgSite);
+  width: 100%;
+}
+.headline-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 560px;
+}
+.headline article {
+  max-width: 390px;
+}
+.headline article h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 17.5px;
+}
+.headline article p {
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 45px;
+}
+.headline img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.cards {
+  margin: 150px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 69px 111px;
+}
+
+.card {
+  max-width: 340px;
+  min-height: 420px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  border-radius: 0 0 5px 5px;
+}
+.card-thumb {
+  height: 50%;
+}
+.color-red { background: hsla(0, 100%, 69%, 1) }
+.color-blue { background: hsla(187, 100%, 69%, 1) }
+.color-pink { background: hsla(295, 100%, 69%, 1) }
+.color-green { background: hsla(126, 100%, 69%, 1) }
+.color-yellow { background: hsla(47, 100%, 69%, 1) }
+.color-purple { background: hsla(241, 100%, 69%, 1) }
+
+.card-text { 
+  background: var(--white);
+  border-radius: 0 0 5px 5px;
+  padding: 3rem;
+}
+.card-text h3 {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+.card-text p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bgSite);
+}
+.contact h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 85px 0 60px 0; 
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 470px;
+  margin-bottom: 80px;
+}
+.contact form input, .contact form textarea{
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: var(--text);
+  border: none;
+  border-radius: 6px;
+}
+::placeholder {
+  color: rgba(110, 114, 117, 0.74);
+}
+.contact form button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--title);
+}
+footer a {
+  color: var(--text);
+}
+footer a:hover {
+  color: var(--buttonColor);
+}
+
+.links-redes { 
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.link-item {
+  background: var(--buttonColor);
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  border-radius: 3px;
+  transition: opacity .3s;
+}
+.link-item:hover {
+  opacity: .8;
+}
+.links-redes li a img {
+  width: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .headline article {
+    width: 100%;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headline {
+    width: 100vw;
+    height: 100vh;
+  }
+  .headline-content {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+  }
+  .headline article h1 {
+    font-size: 32px;
+    line-height: 47px;
+  }
+  .headline article p {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .headline img {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 100%;
+  }
+
+  .contact form {
+    width: 100vw;
+    padding: 0 2rem;
+  }
+}
